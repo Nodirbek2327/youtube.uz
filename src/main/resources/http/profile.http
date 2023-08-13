@@ -1,0 +1,52 @@
+### Create pofile
+POST localhost:8080/api/v1/profile/admin
+Content-Type:  application/json
+Authorization: Basic Kzk5ODkxNTI1NDQ3NToxMjM0
+
+{
+  "name": "G'ani",
+  "surname": "Ganiyev",
+  "email": "1234567@mail.uz",
+  "password": "1234567",
+  "role": "ROLE_USER",
+  "phone": "1234567890"
+}
+
+### create admin
+POST localhost:8080/api/v1/profile/open/create
+Content-Type:  application/json
+
+{
+  "name": "Nodirbek",
+  "surname": "Hasanov",
+  "email": "123@mail.ru",
+  "phone": "+998915254475",
+  "password": "1234",
+  "role": "ROLE_ADMIN"
+}
+
+### Update pofile by id
+PUT localhost:8080/api/v1/profile/1
+Content-Type:  application/json
+
+{
+  "name": "Alijon2",
+  "surname": "Aliyev",
+  "email": "123@mail.ru"
+}
+
+
+### Update pofile detail
+GET localhost:8080/api/v1/profile/detail
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODk3ODU0NjAsImlkIjoyLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2ODk3ODkwNjAsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.cDFNQmMeSE9QQJOmj8ddlkeUQWiWpgQLJmoP8KHfjuQd_im-AizOIwVWliGn-fTyonuJRhJ8iLNVJ0gyWp4T_A
+
+
+{
+  "name": "Adminjon",
+  "surname": "Valiyev"
+}
+
+
+
+
